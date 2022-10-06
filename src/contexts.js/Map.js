@@ -8,10 +8,10 @@ const MapContextProvider = ({children}) => {
     const [bars, setBars] = useState(dataBars)
 
     useEffect(() => {
-        navigator.geolocation.getCurrentPosition((location) => {
+        navigator.geolocation.getCurrentPosition((position) => {
             setLocation({
-                lat: location.coords.latitude,
-                lng: location.coords.longitude
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
             })
         },
         error => {

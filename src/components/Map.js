@@ -15,7 +15,7 @@ const markerIcon = new Icon({
 })
 
 const Map = () => {
-
+    
     const { location, bars } = useContext(MapContext)
 
     // console.log(location);
